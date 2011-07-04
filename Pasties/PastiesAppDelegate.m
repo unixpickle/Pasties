@@ -103,6 +103,10 @@
 	[[FocusManager sharedFocusManager] forceAppFocus];
 }
 
+- (void)showHistory:(id)sender {
+	[HistoryWindow showHistoryWindow];
+}
+
 #pragma mark Private
 
 - (void)configureMenu {
@@ -120,6 +124,7 @@
 	
 	[menu addItem:[NSMenuItem separatorItem]];
 	[[menu addItemWithTitle:@"Preferences" action:@selector(showSettings:) keyEquivalent:@""] setTarget:self];
+	[[menu addItemWithTitle:@"History" action:@selector(showHistory:) keyEquivalent:@""] setTarget:self];
 	[menu addItem:[NSMenuItem separatorItem]];
 	[[menu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""] setTarget:[NSApplication sharedApplication]];
 	

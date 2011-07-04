@@ -164,6 +164,9 @@
 #pragma mark Poster
 
 - (void)onlineTextPoster:(OnlineTextPoster *)thePoster postedToURL:(NSURL *)textURL {
+	NSDate * date = [NSDate date];
+	[[PasteHistoryController sharedHistoryController] addHistoryItem:[PasteHistoryItem historyItemWithURL:textURL addDate:date]];
+	
 	[cancelButton setAlphaValue:0];
 	[viewButton setAlphaValue:0];
 	[[self contentView] addSubview:cancelButton];

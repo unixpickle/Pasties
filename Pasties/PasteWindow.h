@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "ANNotificationWindow.h"
 #import "MultiServiceHandler.h"
+#import "PasteHistoryController.h"
 
 
 @interface PasteWindow : ANNotificationWindow <OnlineTextPosterDelegate> {

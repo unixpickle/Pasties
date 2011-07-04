@@ -46,6 +46,8 @@
 		FAB3D5FC13C20E6400D1DB65 /* PasteHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3D5FB13C20E6400D1DB65 /* PasteHistoryController.m */; };
 		FAB3D5FF13C20FCD00D1DB65 /* clipboard_inv.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3D5FD13C20FCD00D1DB65 /* clipboard_inv.png */; };
 		FAB3D60013C20FCD00D1DB65 /* clipboard.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3D5FE13C20FCD00D1DB65 /* clipboard.png */; };
+		FAB3D60313C2108600D1DB65 /* PasteHistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3D60213C2108600D1DB65 /* PasteHistoryItem.m */; };
+		FAB3D60613C22C8800D1DB65 /* HistoryWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3D60513C22C8800D1DB65 /* HistoryWindow.m */; };
 		FACE7F7013C15BC400E0E9DD /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE7F6F13C15BC400E0E9DD /* StartAtLoginController.m */; };
 		FACE7F7813C169AC00E0E9DD /* pasties.icns in Resources */ = {isa = PBXBuildFile; fileRef = FACE7F7713C169AC00E0E9DD /* pasties.icns */; };
 /* End PBXBuildFile section */
@@ -120,6 +122,10 @@
 		FAB3D5FB13C20E6400D1DB65 /* PasteHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteHistoryController.m; sourceTree = "<group>"; };
 		FAB3D5FD13C20FCD00D1DB65 /* clipboard_inv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard_inv.png; sourceTree = "<group>"; };
 		FAB3D5FE13C20FCD00D1DB65 /* clipboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard.png; sourceTree = "<group>"; };
+		FAB3D60113C2108600D1DB65 /* PasteHistoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteHistoryItem.h; sourceTree = "<group>"; };
+		FAB3D60213C2108600D1DB65 /* PasteHistoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteHistoryItem.m; sourceTree = "<group>"; };
+		FAB3D60413C22C8800D1DB65 /* HistoryWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryWindow.h; sourceTree = "<group>"; };
+		FAB3D60513C22C8800D1DB65 /* HistoryWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryWindow.m; sourceTree = "<group>"; };
 		FACE7F6E13C15BC400E0E9DD /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
 		FACE7F6F13C15BC400E0E9DD /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
 		FACE7F7713C169AC00E0E9DD /* pasties.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pasties.icns; sourceTree = "<group>"; };
@@ -356,6 +362,10 @@
 			children = (
 				FAB3D5FA13C20E6400D1DB65 /* PasteHistoryController.h */,
 				FAB3D5FB13C20E6400D1DB65 /* PasteHistoryController.m */,
+				FAB3D60113C2108600D1DB65 /* PasteHistoryItem.h */,
+				FAB3D60213C2108600D1DB65 /* PasteHistoryItem.m */,
+				FAB3D60413C22C8800D1DB65 /* HistoryWindow.h */,
+				FAB3D60513C22C8800D1DB65 /* HistoryWindow.m */,
 			);
 			name = History;
 			sourceTree = "<group>";
@@ -456,6 +466,8 @@
 				FAA6DBD613C10908001BC008 /* PastebinTextPoster.m in Sources */,
 				FACE7F7013C15BC400E0E9DD /* StartAtLoginController.m in Sources */,
 				FAB3D5FC13C20E6400D1DB65 /* PasteHistoryController.m in Sources */,
+				FAB3D60313C2108600D1DB65 /* PasteHistoryItem.m in Sources */,
+				FAB3D60613C22C8800D1DB65 /* HistoryWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,8 @@
 #import "FocusManager.h"
 #import "LanguageDetection.h"
 #import "StartAtLoginController.h"
+#import "HistoryWindow.h"
+
 
 @interface PastiesAppDelegate : NSObject <NSApplicationDelegate> {
 	NSStatusItem * systemMenu;
@@ -24,5 +26,6 @@
 - (void)newPaste:(id)sender;
 - (void)pasteClipboard:(id)sender;
 - (void)showSettings:(id)sender;
+- (void)showHistory:(id)sender;
 
 @end
