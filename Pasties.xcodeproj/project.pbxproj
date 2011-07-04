@@ -13,8 +13,6 @@
 		FA2A9ECA13BD2715000F4741 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9EC813BD2715000F4741 /* Credits.rtf */; };
 		FA2A9ECD13BD2715000F4741 /* PastiesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9ECC13BD2715000F4741 /* PastiesAppDelegate.m */; };
 		FA2A9ED013BD2715000F4741 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9ECE13BD2715000F4741 /* MainMenu.xib */; };
-		FA2A9ED813BD303C000F4741 /* icon16inv.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9ED713BD303C000F4741 /* icon16inv.png */; };
-		FA2A9EDC13BD304B000F4741 /* icon16.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9EDB13BD304B000F4741 /* icon16.png */; };
 		FA2A9EE613BD32E4000F4741 /* OnlineTextPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EE513BD32E4000F4741 /* OnlineTextPoster.m */; };
 		FA2A9EED13BD3A66000F4741 /* NSError+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EEC13BD3A66000F4741 /* NSError+Message.m */; };
 		FA2A9EF013BD419C000F4741 /* PastieTextPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EEF13BD419C000F4741 /* PastieTextPoster.m */; };
@@ -33,8 +31,6 @@
 		FA37C10C13BED0460053D520 /* ANKeyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C10B13BED0460053D520 /* ANKeyEvent.m */; };
 		FA37C11013BF5DC30053D520 /* window@250x65.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C10E13BF5DC30053D520 /* window@250x65.png */; };
 		FA37C11413BF79DC0053D520 /* window@250x95.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C11313BF79DC0053D520 /* window@250x95.png */; };
-		FA37C11713BF970D0053D520 /* sysiconinv.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C11513BF970D0053D520 /* sysiconinv.png */; };
-		FA37C11813BF970D0053D520 /* sysicon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C11613BF970D0053D520 /* sysicon.png */; };
 		FA37C11B13BFA7080053D520 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C11A13BFA7080053D520 /* SettingsController.m */; };
 		FA37C11F13BFB47D0053D520 /* SettingsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C11E13BFB47D0053D520 /* SettingsWindow.m */; };
 		FA37C12313C0028B0053D520 /* PastebayTextPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C12213C0028B0053D520 /* PastebayTextPoster.m */; };
@@ -47,6 +43,9 @@
 		FAA6DBCF13C108CA001BC008 /* MultiServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBCB13C108CA001BC008 /* MultiServiceHandler.m */; };
 		FAA6DBD513C10908001BC008 /* PastebinLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBD213C10908001BC008 /* PastebinLanguage.m */; };
 		FAA6DBD613C10908001BC008 /* PastebinTextPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBD313C10908001BC008 /* PastebinTextPoster.m */; };
+		FAB3D5FC13C20E6400D1DB65 /* PasteHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3D5FB13C20E6400D1DB65 /* PasteHistoryController.m */; };
+		FAB3D5FF13C20FCD00D1DB65 /* clipboard_inv.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3D5FD13C20FCD00D1DB65 /* clipboard_inv.png */; };
+		FAB3D60013C20FCD00D1DB65 /* clipboard.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3D5FE13C20FCD00D1DB65 /* clipboard.png */; };
 		FACE7F7013C15BC400E0E9DD /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE7F6F13C15BC400E0E9DD /* StartAtLoginController.m */; };
 		FACE7F7813C169AC00E0E9DD /* pasties.icns in Resources */ = {isa = PBXBuildFile; fileRef = FACE7F7713C169AC00E0E9DD /* pasties.icns */; };
 /* End PBXBuildFile section */
@@ -65,8 +64,6 @@
 		FA2A9ECB13BD2715000F4741 /* PastiesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastiesAppDelegate.h; sourceTree = "<group>"; };
 		FA2A9ECC13BD2715000F4741 /* PastiesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastiesAppDelegate.m; sourceTree = "<group>"; };
 		FA2A9ECF13BD2715000F4741 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FA2A9ED713BD303C000F4741 /* icon16inv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon16inv.png; sourceTree = "<group>"; };
-		FA2A9EDB13BD304B000F4741 /* icon16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon16.png; sourceTree = "<group>"; };
 		FA2A9EE413BD32E4000F4741 /* OnlineTextPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineTextPoster.h; sourceTree = "<group>"; };
 		FA2A9EE513BD32E4000F4741 /* OnlineTextPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineTextPoster.m; sourceTree = "<group>"; };
 		FA2A9EEB13BD3A66000F4741 /* NSError+Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Message.h"; sourceTree = "<group>"; };
@@ -96,8 +93,6 @@
 		FA37C10B13BED0460053D520 /* ANKeyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANKeyEvent.m; sourceTree = "<group>"; };
 		FA37C10E13BF5DC30053D520 /* window@250x65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "window@250x65.png"; sourceTree = "<group>"; };
 		FA37C11313BF79DC0053D520 /* window@250x95.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "window@250x95.png"; sourceTree = "<group>"; };
-		FA37C11513BF970D0053D520 /* sysiconinv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sysiconinv.png; sourceTree = "<group>"; };
-		FA37C11613BF970D0053D520 /* sysicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sysicon.png; sourceTree = "<group>"; };
 		FA37C11913BFA7070053D520 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		FA37C11A13BFA7080053D520 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		FA37C11D13BFB47D0053D520 /* SettingsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindow.h; sourceTree = "<group>"; };
@@ -121,6 +116,10 @@
 		FAA6DBD213C10908001BC008 /* PastebinLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebinLanguage.m; sourceTree = "<group>"; };
 		FAA6DBD313C10908001BC008 /* PastebinTextPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebinTextPoster.m; sourceTree = "<group>"; };
 		FAA6DBD413C10908001BC008 /* PastebinTextPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastebinTextPoster.h; sourceTree = "<group>"; };
+		FAB3D5FA13C20E6400D1DB65 /* PasteHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteHistoryController.h; sourceTree = "<group>"; };
+		FAB3D5FB13C20E6400D1DB65 /* PasteHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteHistoryController.m; sourceTree = "<group>"; };
+		FAB3D5FD13C20FCD00D1DB65 /* clipboard_inv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard_inv.png; sourceTree = "<group>"; };
+		FAB3D5FE13C20FCD00D1DB65 /* clipboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard.png; sourceTree = "<group>"; };
 		FACE7F6E13C15BC400E0E9DD /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
 		FACE7F6F13C15BC400E0E9DD /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
 		FACE7F7713C169AC00E0E9DD /* pasties.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pasties.icns; sourceTree = "<group>"; };
@@ -211,12 +210,10 @@
 		FA2A9ED613BD2D00000F4741 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				FA37C11513BF970D0053D520 /* sysiconinv.png */,
-				FA37C11613BF970D0053D520 /* sysicon.png */,
+				FAB3D5FD13C20FCD00D1DB65 /* clipboard_inv.png */,
+				FAB3D5FE13C20FCD00D1DB65 /* clipboard.png */,
 				FAA6DBAA13C0AEA2001BC008 /* pasties_old.icns */,
 				FACE7F7713C169AC00E0E9DD /* pasties.icns */,
-				FA2A9EDB13BD304B000F4741 /* icon16.png */,
-				FA2A9ED713BD303C000F4741 /* icon16inv.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -302,10 +299,8 @@
 		FA37C11C13BFB4040053D520 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA37C11913BFA7070053D520 /* SettingsController.h */,
-				FA37C11A13BFA7080053D520 /* SettingsController.m */,
-				FA37C11D13BFB47D0053D520 /* SettingsWindow.h */,
-				FA37C11E13BFB47D0053D520 /* SettingsWindow.m */,
+				FAB3D5F913C20E4C00D1DB65 /* History */,
+				FAB3D5F813C20E4300D1DB65 /* Settings */,
 				FACE7F6E13C15BC400E0E9DD /* StartAtLoginController.h */,
 				FACE7F6F13C15BC400E0E9DD /* StartAtLoginController.m */,
 			);
@@ -343,6 +338,26 @@
 				FAA6DBD413C10908001BC008 /* PastebinTextPoster.h */,
 			);
 			name = Pastebin;
+			sourceTree = "<group>";
+		};
+		FAB3D5F813C20E4300D1DB65 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FA37C11913BFA7070053D520 /* SettingsController.h */,
+				FA37C11A13BFA7080053D520 /* SettingsController.m */,
+				FA37C11D13BFB47D0053D520 /* SettingsWindow.h */,
+				FA37C11E13BFB47D0053D520 /* SettingsWindow.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		FAB3D5F913C20E4C00D1DB65 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3D5FA13C20E6400D1DB65 /* PasteHistoryController.h */,
+				FAB3D5FB13C20E6400D1DB65 /* PasteHistoryController.m */,
+			);
+			name = History;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,18 +410,16 @@
 				FA2A9EC413BD2715000F4741 /* InfoPlist.strings in Resources */,
 				FA2A9ECA13BD2715000F4741 /* Credits.rtf in Resources */,
 				FA2A9ED013BD2715000F4741 /* MainMenu.xib in Resources */,
-				FA2A9ED813BD303C000F4741 /* icon16inv.png in Resources */,
-				FA2A9EDC13BD304B000F4741 /* icon16.png in Resources */,
 				FA2A9F1513BE61AA000F4741 /* success.png in Resources */,
 				FA2A9F1613BE61AA000F4741 /* failed.png in Resources */,
 				FA37C0FA13BEBF4C0053D520 /* close_unpress.png in Resources */,
 				FA37C0FB13BEBF4C0053D520 /* close_press.png in Resources */,
 				FA37C11013BF5DC30053D520 /* window@250x65.png in Resources */,
 				FA37C11413BF79DC0053D520 /* window@250x95.png in Resources */,
-				FA37C11713BF970D0053D520 /* sysiconinv.png in Resources */,
-				FA37C11813BF970D0053D520 /* sysicon.png in Resources */,
 				FAA6DBAB13C0AEA2001BC008 /* pasties_old.icns in Resources */,
 				FACE7F7813C169AC00E0E9DD /* pasties.icns in Resources */,
+				FAB3D5FF13C20FCD00D1DB65 /* clipboard_inv.png in Resources */,
+				FAB3D60013C20FCD00D1DB65 /* clipboard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +455,7 @@
 				FAA6DBD513C10908001BC008 /* PastebinLanguage.m in Sources */,
 				FAA6DBD613C10908001BC008 /* PastebinTextPoster.m in Sources */,
 				FACE7F7013C15BC400E0E9DD /* StartAtLoginController.m in Sources */,
+				FAB3D5FC13C20E6400D1DB65 /* PasteHistoryController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
