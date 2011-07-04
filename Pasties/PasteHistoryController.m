@@ -134,9 +134,9 @@
 }
 
 - (void)flushToFile {
-	NSDate * start = [NSDate date];
+	// NSDate * start = [NSDate date];
 	[NSKeyedArchiver archiveRootObject:historyItems toFile:historyFilePath];
-	NSDate * end = [NSDate date];
+	// NSDate * end = [NSDate date];
 	// NSLog(@"Encoded history to file in %lf seconds.", [end timeIntervalSinceDate:start]);
 }
 
