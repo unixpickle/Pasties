@@ -51,7 +51,7 @@
 	PastebayLanguage * theLanguage = [userInfo objectForKey:@"language"];
 	
 	NSDictionary * postKeys = [NSDictionary dictionaryWithObjectsAndKeys:theText, @"code2", 
-							   @"m", @"expiry",
+							   @"f", @"expiry", // TODO: add expiration setting.
 							   [theLanguage languageAbbreviation], @"format",
 							   @"", @"pam",
 							   @"", @"parent_pid", 
