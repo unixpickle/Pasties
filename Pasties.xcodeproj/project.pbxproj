@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA2A9EBA13BD2715000F4741 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2A9EB913BD2715000F4741 /* Cocoa.framework */; };
+		FA2A9EC413BD2715000F4741 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9EC213BD2715000F4741 /* InfoPlist.strings */; };
+		FA2A9EC713BD2715000F4741 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EC613BD2715000F4741 /* main.m */; };
+		FA2A9ECA13BD2715000F4741 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9EC813BD2715000F4741 /* Credits.rtf */; };
+		FA2A9ECD13BD2715000F4741 /* PastiesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9ECC13BD2715000F4741 /* PastiesAppDelegate.m */; };
+		FA2A9ED013BD2715000F4741 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9ECE13BD2715000F4741 /* MainMenu.xib */; };
+		FA2A9ED813BD303C000F4741 /* icon16inv.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9ED713BD303C000F4741 /* icon16inv.png */; };
+		FA2A9EDC13BD304B000F4741 /* icon16.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9EDB13BD304B000F4741 /* icon16.png */; };
+		FA2A9EE613BD32E4000F4741 /* OnlineTextPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EE513BD32E4000F4741 /* OnlineTextPoster.m */; };
+		FA2A9EED13BD3A66000F4741 /* NSError+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EEC13BD3A66000F4741 /* NSError+Message.m */; };
+		FA2A9EF013BD419C000F4741 /* PastieTextPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EEF13BD419C000F4741 /* PastieTextPoster.m */; };
+		FA2A9EF513BD430C000F4741 /* PastieLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EF413BD430C000F4741 /* PastieLanguage.m */; };
+		FA2A9EF813BD4A00000F4741 /* NSDictionary+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EF713BD4A00000F4741 /* NSDictionary+URLEncode.m */; };
+		FA2A9EFB13BD5846000F4741 /* HTTPNoRedirect.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9EFA13BD5845000F4741 /* HTTPNoRedirect.m */; };
+		FA2A9F0413BE0676000F4741 /* PasteWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9F0313BE0676000F4741 /* PasteWindow.m */; };
+		FA2A9F0713BE56D7000F4741 /* ANNotificationWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9F0613BE56D6000F4741 /* ANNotificationWindow.m */; };
+		FA2A9F0B13BE5791000F4741 /* ANWindowRoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9F0A13BE5791000F4741 /* ANWindowRoundedView.m */; };
+		FA2A9F1513BE61AA000F4741 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9F1313BE61AA000F4741 /* success.png */; };
+		FA2A9F1613BE61AA000F4741 /* failed.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9F1413BE61AA000F4741 /* failed.png */; };
+		FA37C0FA13BEBF4C0053D520 /* close_unpress.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C0F813BEBF4C0053D520 /* close_unpress.png */; };
+		FA37C0FB13BEBF4C0053D520 /* close_press.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C0F913BEBF4C0053D520 /* close_press.png */; };
+		FA37C10113BEC0890053D520 /* ANCloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C10013BEC0890053D520 /* ANCloseButton.m */; };
+		FA37C10913BED0290053D520 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA37C10813BED0290053D520 /* Carbon.framework */; };
+		FA37C10C13BED0460053D520 /* ANKeyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C10B13BED0460053D520 /* ANKeyEvent.m */; };
+		FA37C11013BF5DC30053D520 /* window@250x65.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C10E13BF5DC30053D520 /* window@250x65.png */; };
+		FA37C11413BF79DC0053D520 /* window@250x95.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C11313BF79DC0053D520 /* window@250x95.png */; };
+		FA37C11713BF970D0053D520 /* sysiconinv.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C11513BF970D0053D520 /* sysiconinv.png */; };
+		FA37C11813BF970D0053D520 /* sysicon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA37C11613BF970D0053D520 /* sysicon.png */; };
+		FA37C11B13BFA7080053D520 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C11A13BFA7080053D520 /* SettingsController.m */; };
+		FA37C11F13BFB47D0053D520 /* SettingsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C11E13BFB47D0053D520 /* SettingsWindow.m */; };
+		FA37C12313C0028B0053D520 /* PastebayTextPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C12213C0028B0053D520 /* PastebayTextPoster.m */; };
+		FA37C12613C002D50053D520 /* PastebayLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37C12513C002D50053D520 /* PastebayLanguage.m */; };
+		FA6753C513BE9B8000C4E111 /* PasteComposeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6753C413BE9B8000C4E111 /* PasteComposeWindow.m */; };
+		FAA6DBA513C0A664001BC008 /* CarbonAppProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBA413C0A664001BC008 /* CarbonAppProcess.m */; };
+		FAA6DBA813C0AB04001BC008 /* FocusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBA713C0AB04001BC008 /* FocusManager.m */; };
+		FAA6DBAB13C0AEA2001BC008 /* pasties_old.icns in Resources */ = {isa = PBXBuildFile; fileRef = FAA6DBAA13C0AEA2001BC008 /* pasties_old.icns */; };
+		FAA6DBCE13C108CA001BC008 /* LanguageDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBCA13C108CA001BC008 /* LanguageDetection.m */; };
+		FAA6DBCF13C108CA001BC008 /* MultiServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBCB13C108CA001BC008 /* MultiServiceHandler.m */; };
+		FAA6DBD513C10908001BC008 /* PastebinLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBD213C10908001BC008 /* PastebinLanguage.m */; };
+		FAA6DBD613C10908001BC008 /* PastebinTextPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA6DBD313C10908001BC008 /* PastebinTextPoster.m */; };
+		FACE7F7013C15BC400E0E9DD /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE7F6F13C15BC400E0E9DD /* StartAtLoginController.m */; };
+		FACE7F7813C169AC00E0E9DD /* pasties.icns in Resources */ = {isa = PBXBuildFile; fileRef = FACE7F7713C169AC00E0E9DD /* pasties.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA2A9EB513BD2715000F4741 /* Pasties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pasties.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2A9EB913BD2715000F4741 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA2A9EBC13BD2715000F4741 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA2A9EBD13BD2715000F4741 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA2A9EBE13BD2715000F4741 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA2A9EC113BD2715000F4741 /* Pasties-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pasties-Info.plist"; sourceTree = "<group>"; };
+		FA2A9EC313BD2715000F4741 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA2A9EC513BD2715000F4741 /* Pasties-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pasties-Prefix.pch"; sourceTree = "<group>"; };
+		FA2A9EC613BD2715000F4741 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA2A9EC913BD2715000F4741 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FA2A9ECB13BD2715000F4741 /* PastiesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastiesAppDelegate.h; sourceTree = "<group>"; };
+		FA2A9ECC13BD2715000F4741 /* PastiesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastiesAppDelegate.m; sourceTree = "<group>"; };
+		FA2A9ECF13BD2715000F4741 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA2A9ED713BD303C000F4741 /* icon16inv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon16inv.png; sourceTree = "<group>"; };
+		FA2A9EDB13BD304B000F4741 /* icon16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon16.png; sourceTree = "<group>"; };
+		FA2A9EE413BD32E4000F4741 /* OnlineTextPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineTextPoster.h; sourceTree = "<group>"; };
+		FA2A9EE513BD32E4000F4741 /* OnlineTextPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineTextPoster.m; sourceTree = "<group>"; };
+		FA2A9EEB13BD3A66000F4741 /* NSError+Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Message.h"; sourceTree = "<group>"; };
+		FA2A9EEC13BD3A66000F4741 /* NSError+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Message.m"; sourceTree = "<group>"; };
+		FA2A9EEE13BD419C000F4741 /* PastieTextPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastieTextPoster.h; sourceTree = "<group>"; };
+		FA2A9EEF13BD419C000F4741 /* PastieTextPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastieTextPoster.m; sourceTree = "<group>"; };
+		FA2A9EF313BD430C000F4741 /* PastieLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastieLanguage.h; sourceTree = "<group>"; };
+		FA2A9EF413BD430C000F4741 /* PastieLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastieLanguage.m; sourceTree = "<group>"; };
+		FA2A9EF613BD4A00000F4741 /* NSDictionary+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URLEncode.h"; sourceTree = "<group>"; };
+		FA2A9EF713BD4A00000F4741 /* NSDictionary+URLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URLEncode.m"; sourceTree = "<group>"; };
+		FA2A9EF913BD5845000F4741 /* HTTPNoRedirect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPNoRedirect.h; sourceTree = "<group>"; };
+		FA2A9EFA13BD5845000F4741 /* HTTPNoRedirect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPNoRedirect.m; sourceTree = "<group>"; };
+		FA2A9F0213BE0675000F4741 /* PasteWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteWindow.h; sourceTree = "<group>"; };
+		FA2A9F0313BE0676000F4741 /* PasteWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteWindow.m; sourceTree = "<group>"; };
+		FA2A9F0513BE56D6000F4741 /* ANNotificationWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNotificationWindow.h; sourceTree = "<group>"; };
+		FA2A9F0613BE56D6000F4741 /* ANNotificationWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANNotificationWindow.m; sourceTree = "<group>"; };
+		FA2A9F0913BE5791000F4741 /* ANWindowRoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANWindowRoundedView.h; sourceTree = "<group>"; };
+		FA2A9F0A13BE5791000F4741 /* ANWindowRoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANWindowRoundedView.m; sourceTree = "<group>"; };
+		FA2A9F1313BE61AA000F4741 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		FA2A9F1413BE61AA000F4741 /* failed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failed.png; sourceTree = "<group>"; };
+		FA37C0F813BEBF4C0053D520 /* close_unpress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_unpress.png; sourceTree = "<group>"; };
+		FA37C0F913BEBF4C0053D520 /* close_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_press.png; sourceTree = "<group>"; };
+		FA37C0FF13BEC0890053D520 /* ANCloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCloseButton.h; sourceTree = "<group>"; };
+		FA37C10013BEC0890053D520 /* ANCloseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCloseButton.m; sourceTree = "<group>"; };
+		FA37C10813BED0290053D520 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		FA37C10A13BED0460053D520 /* ANKeyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANKeyEvent.h; sourceTree = "<group>"; };
+		FA37C10B13BED0460053D520 /* ANKeyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANKeyEvent.m; sourceTree = "<group>"; };
+		FA37C10E13BF5DC30053D520 /* window@250x65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "window@250x65.png"; sourceTree = "<group>"; };
+		FA37C11313BF79DC0053D520 /* window@250x95.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "window@250x95.png"; sourceTree = "<group>"; };
+		FA37C11513BF970D0053D520 /* sysiconinv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sysiconinv.png; sourceTree = "<group>"; };
+		FA37C11613BF970D0053D520 /* sysicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sysicon.png; sourceTree = "<group>"; };
+		FA37C11913BFA7070053D520 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		FA37C11A13BFA7080053D520 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		FA37C11D13BFB47D0053D520 /* SettingsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindow.h; sourceTree = "<group>"; };
+		FA37C11E13BFB47D0053D520 /* SettingsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindow.m; sourceTree = "<group>"; };
+		FA37C12113C0028B0053D520 /* PastebayTextPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastebayTextPoster.h; sourceTree = "<group>"; };
+		FA37C12213C0028B0053D520 /* PastebayTextPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebayTextPoster.m; sourceTree = "<group>"; };
+		FA37C12413C002D40053D520 /* PastebayLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastebayLanguage.h; sourceTree = "<group>"; };
+		FA37C12513C002D50053D520 /* PastebayLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebayLanguage.m; sourceTree = "<group>"; };
+		FA6753C313BE9B8000C4E111 /* PasteComposeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteComposeWindow.h; sourceTree = "<group>"; };
+		FA6753C413BE9B8000C4E111 /* PasteComposeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteComposeWindow.m; sourceTree = "<group>"; };
+		FAA6DBA313C0A664001BC008 /* CarbonAppProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonAppProcess.h; sourceTree = "<group>"; };
+		FAA6DBA413C0A664001BC008 /* CarbonAppProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonAppProcess.m; sourceTree = "<group>"; };
+		FAA6DBA613C0AB04001BC008 /* FocusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusManager.h; sourceTree = "<group>"; };
+		FAA6DBA713C0AB04001BC008 /* FocusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusManager.m; sourceTree = "<group>"; };
+		FAA6DBAA13C0AEA2001BC008 /* pasties_old.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pasties_old.icns; sourceTree = "<group>"; };
+		FAA6DBCA13C108CA001BC008 /* LanguageDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDetection.m; sourceTree = "<group>"; };
+		FAA6DBCB13C108CA001BC008 /* MultiServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiServiceHandler.m; sourceTree = "<group>"; };
+		FAA6DBCC13C108CA001BC008 /* MultiServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiServiceHandler.h; sourceTree = "<group>"; };
+		FAA6DBCD13C108CA001BC008 /* LanguageDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDetection.h; sourceTree = "<group>"; };
+		FAA6DBD113C10908001BC008 /* PastebinLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastebinLanguage.h; sourceTree = "<group>"; };
+		FAA6DBD213C10908001BC008 /* PastebinLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebinLanguage.m; sourceTree = "<group>"; };
+		FAA6DBD313C10908001BC008 /* PastebinTextPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebinTextPoster.m; sourceTree = "<group>"; };
+		FAA6DBD413C10908001BC008 /* PastebinTextPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastebinTextPoster.h; sourceTree = "<group>"; };
+		FACE7F6E13C15BC400E0E9DD /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
+		FACE7F6F13C15BC400E0E9DD /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
+		FACE7F7713C169AC00E0E9DD /* pasties.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pasties.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA2A9EB213BD2715000F4741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA37C10913BED0290053D520 /* Carbon.framework in Frameworks */,
+				FA2A9EBA13BD2715000F4741 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA2A9EAA13BD2714000F4741 = {
+			isa = PBXGroup;
+			children = (
+				FA2A9EBF13BD2715000F4741 /* Pasties */,
+				FA2A9EB813BD2715000F4741 /* Frameworks */,
+				FA2A9EB613BD2715000F4741 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA2A9EB613BD2715000F4741 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A9EB513BD2715000F4741 /* Pasties.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2A9EB813BD2715000F4741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA37C10813BED0290053D520 /* Carbon.framework */,
+				FA2A9EB913BD2715000F4741 /* Cocoa.framework */,
+				FA2A9EBB13BD2715000F4741 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2A9EBB13BD2715000F4741 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A9EBC13BD2715000F4741 /* AppKit.framework */,
+				FA2A9EBD13BD2715000F4741 /* CoreData.framework */,
+				FA2A9EBE13BD2715000F4741 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FA2A9EBF13BD2715000F4741 /* Pasties */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A9EEA13BD3A31000F4741 /* Utils */,
+				FA2A9EE313BD32AB000F4741 /* Text Paste */,
+				FA37C11C13BFB4040053D520 /* Controllers */,
+				FA2A9ECB13BD2715000F4741 /* PastiesAppDelegate.h */,
+				FA2A9ECC13BD2715000F4741 /* PastiesAppDelegate.m */,
+				FA2A9F0213BE0675000F4741 /* PasteWindow.h */,
+				FA2A9F0313BE0676000F4741 /* PasteWindow.m */,
+				FA6753C313BE9B8000C4E111 /* PasteComposeWindow.h */,
+				FA6753C413BE9B8000C4E111 /* PasteComposeWindow.m */,
+				FA2A9ECE13BD2715000F4741 /* MainMenu.xib */,
+				FA2A9EC013BD2715000F4741 /* Supporting Files */,
+			);
+			path = Pasties;
+			sourceTree = "<group>";
+		};
+		FA2A9EC013BD2715000F4741 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A9F1213BE619B000F4741 /* Gfx */,
+				FA2A9ED613BD2D00000F4741 /* Icons */,
+				FA2A9EC113BD2715000F4741 /* Pasties-Info.plist */,
+				FA2A9EC213BD2715000F4741 /* InfoPlist.strings */,
+				FA2A9EC513BD2715000F4741 /* Pasties-Prefix.pch */,
+				FA2A9EC613BD2715000F4741 /* main.m */,
+				FA2A9EC813BD2715000F4741 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA2A9ED613BD2D00000F4741 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FA37C11513BF970D0053D520 /* sysiconinv.png */,
+				FA37C11613BF970D0053D520 /* sysicon.png */,
+				FAA6DBAA13C0AEA2001BC008 /* pasties_old.icns */,
+				FACE7F7713C169AC00E0E9DD /* pasties.icns */,
+				FA2A9EDB13BD304B000F4741 /* icon16.png */,
+				FA2A9ED713BD303C000F4741 /* icon16inv.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		FA2A9EE313BD32AB000F4741 /* Text Paste */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A9EF213BD41A8000F4741 /* General */,
+				FA2A9EF113BD41A1000F4741 /* Pastie */,
+				FA37C12013C001890053D520 /* Pastebay */,
+				FAA6DBD013C108E6001BC008 /* Pastebin */,
+				FAA6DBCD13C108CA001BC008 /* LanguageDetection.h */,
+				FAA6DBCA13C108CA001BC008 /* LanguageDetection.m */,
+				FAA6DBCC13C108CA001BC008 /* MultiServiceHandler.h */,
+				FAA6DBCB13C108CA001BC008 /* MultiServiceHandler.m */,
+			);
+			name = "Text Paste";
+			sourceTree = "<group>";
+		};
+		FA2A9EEA13BD3A31000F4741 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6DBA913C0AB07001BC008 /* Focus */,
+				FA2A9F0813BE5774000F4741 /* UI */,
+				FA2A9EEB13BD3A66000F4741 /* NSError+Message.h */,
+				FA2A9EEC13BD3A66000F4741 /* NSError+Message.m */,
+				FA2A9EF613BD4A00000F4741 /* NSDictionary+URLEncode.h */,
+				FA2A9EF713BD4A00000F4741 /* NSDictionary+URLEncode.m */,
+				FA2A9EF913BD5845000F4741 /* HTTPNoRedirect.h */,
+				FA2A9EFA13BD5845000F4741 /* HTTPNoRedirect.m */,
+				FA37C10A13BED0460053D520 /* ANKeyEvent.h */,
+				FA37C10B13BED0460053D520 /* ANKeyEvent.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FA2A9EF113BD41A1000F4741 /* Pastie */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A9EF313BD430C000F4741 /* PastieLanguage.h */,
+				FA2A9EF413BD430C000F4741 /* PastieLanguage.m */,
+				FA2A9EEE13BD419C000F4741 /* PastieTextPoster.h */,
+				FA2A9EEF13BD419C000F4741 /* PastieTextPoster.m */,
+			);
+			name = Pastie;
+			sourceTree = "<group>";
+		};
+		FA2A9EF213BD41A8000F4741 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A9EE413BD32E4000F4741 /* OnlineTextPoster.h */,
+				FA2A9EE513BD32E4000F4741 /* OnlineTextPoster.m */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		FA2A9F0813BE5774000F4741 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A9F0513BE56D6000F4741 /* ANNotificationWindow.h */,
+				FA2A9F0613BE56D6000F4741 /* ANNotificationWindow.m */,
+				FA2A9F0913BE5791000F4741 /* ANWindowRoundedView.h */,
+				FA2A9F0A13BE5791000F4741 /* ANWindowRoundedView.m */,
+				FA37C0FF13BEC0890053D520 /* ANCloseButton.h */,
+				FA37C10013BEC0890053D520 /* ANCloseButton.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FA2A9F1213BE619B000F4741 /* Gfx */ = {
+			isa = PBXGroup;
+			children = (
+				FA37C11313BF79DC0053D520 /* window@250x95.png */,
+				FA37C10E13BF5DC30053D520 /* window@250x65.png */,
+				FA37C0F813BEBF4C0053D520 /* close_unpress.png */,
+				FA37C0F913BEBF4C0053D520 /* close_press.png */,
+				FA2A9F1313BE61AA000F4741 /* success.png */,
+				FA2A9F1413BE61AA000F4741 /* failed.png */,
+			);
+			name = Gfx;
+			sourceTree = "<group>";
+		};
+		FA37C11C13BFB4040053D520 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA37C11913BFA7070053D520 /* SettingsController.h */,
+				FA37C11A13BFA7080053D520 /* SettingsController.m */,
+				FA37C11D13BFB47D0053D520 /* SettingsWindow.h */,
+				FA37C11E13BFB47D0053D520 /* SettingsWindow.m */,
+				FACE7F6E13C15BC400E0E9DD /* StartAtLoginController.h */,
+				FACE7F6F13C15BC400E0E9DD /* StartAtLoginController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FA37C12013C001890053D520 /* Pastebay */ = {
+			isa = PBXGroup;
+			children = (
+				FA37C12413C002D40053D520 /* PastebayLanguage.h */,
+				FA37C12513C002D50053D520 /* PastebayLanguage.m */,
+				FA37C12113C0028B0053D520 /* PastebayTextPoster.h */,
+				FA37C12213C0028B0053D520 /* PastebayTextPoster.m */,
+			);
+			name = Pastebay;
+			sourceTree = "<group>";
+		};
+		FAA6DBA913C0AB07001BC008 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6DBA313C0A664001BC008 /* CarbonAppProcess.h */,
+				FAA6DBA413C0A664001BC008 /* CarbonAppProcess.m */,
+				FAA6DBA613C0AB04001BC008 /* FocusManager.h */,
+				FAA6DBA713C0AB04001BC008 /* FocusManager.m */,
+			);
+			name = Focus;
+			sourceTree = "<group>";
+		};
+		FAA6DBD013C108E6001BC008 /* Pastebin */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6DBD113C10908001BC008 /* PastebinLanguage.h */,
+				FAA6DBD213C10908001BC008 /* PastebinLanguage.m */,
+				FAA6DBD313C10908001BC008 /* PastebinTextPoster.m */,
+				FAA6DBD413C10908001BC008 /* PastebinTextPoster.h */,
+			);
+			name = Pastebin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA2A9EB413BD2715000F4741 /* Pasties */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2A9ED313BD2715000F4741 /* Build configuration list for PBXNativeTarget "Pasties" */;
+			buildPhases = (
+				FA2A9EB113BD2715000F4741 /* Sources */,
+				FA2A9EB213BD2715000F4741 /* Frameworks */,
+				FA2A9EB313BD2715000F4741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pasties;
+			productName = Pasties;
+			productReference = FA2A9EB513BD2715000F4741 /* Pasties.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA2A9EAC13BD2714000F4741 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FA2A9EAF13BD2714000F4741 /* Build configuration list for PBXProject "Pasties" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA2A9EAA13BD2714000F4741;
+			productRefGroup = FA2A9EB613BD2715000F4741 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA2A9EB413BD2715000F4741 /* Pasties */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA2A9EB313BD2715000F4741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2A9EC413BD2715000F4741 /* InfoPlist.strings in Resources */,
+				FA2A9ECA13BD2715000F4741 /* Credits.rtf in Resources */,
+				FA2A9ED013BD2715000F4741 /* MainMenu.xib in Resources */,
+				FA2A9ED813BD303C000F4741 /* icon16inv.png in Resources */,
+				FA2A9EDC13BD304B000F4741 /* icon16.png in Resources */,
+				FA2A9F1513BE61AA000F4741 /* success.png in Resources */,
+				FA2A9F1613BE61AA000F4741 /* failed.png in Resources */,
+				FA37C0FA13BEBF4C0053D520 /* close_unpress.png in Resources */,
+				FA37C0FB13BEBF4C0053D520 /* close_press.png in Resources */,
+				FA37C11013BF5DC30053D520 /* window@250x65.png in Resources */,
+				FA37C11413BF79DC0053D520 /* window@250x95.png in Resources */,
+				FA37C11713BF970D0053D520 /* sysiconinv.png in Resources */,
+				FA37C11813BF970D0053D520 /* sysicon.png in Resources */,
+				FAA6DBAB13C0AEA2001BC008 /* pasties_old.icns in Resources */,
+				FACE7F7813C169AC00E0E9DD /* pasties.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA2A9EB113BD2715000F4741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2A9EC713BD2715000F4741 /* main.m in Sources */,
+				FA2A9ECD13BD2715000F4741 /* PastiesAppDelegate.m in Sources */,
+				FA2A9EE613BD32E4000F4741 /* OnlineTextPoster.m in Sources */,
+				FA2A9EED13BD3A66000F4741 /* NSError+Message.m in Sources */,
+				FA2A9EF013BD419C000F4741 /* PastieTextPoster.m in Sources */,
+				FA2A9EF513BD430C000F4741 /* PastieLanguage.m in Sources */,
+				FA2A9EF813BD4A00000F4741 /* NSDictionary+URLEncode.m in Sources */,
+				FA2A9EFB13BD5846000F4741 /* HTTPNoRedirect.m in Sources */,
+				FA2A9F0413BE0676000F4741 /* PasteWindow.m in Sources */,
+				FA2A9F0713BE56D7000F4741 /* ANNotificationWindow.m in Sources */,
+				FA2A9F0B13BE5791000F4741 /* ANWindowRoundedView.m in Sources */,
+				FA6753C513BE9B8000C4E111 /* PasteComposeWindow.m in Sources */,
+				FA37C10113BEC0890053D520 /* ANCloseButton.m in Sources */,
+				FA37C10C13BED0460053D520 /* ANKeyEvent.m in Sources */,
+				FA37C11B13BFA7080053D520 /* SettingsController.m in Sources */,
+				FA37C11F13BFB47D0053D520 /* SettingsWindow.m in Sources */,
+				FA37C12313C0028B0053D520 /* PastebayTextPoster.m in Sources */,
+				FA37C12613C002D50053D520 /* PastebayLanguage.m in Sources */,
+				FAA6DBA513C0A664001BC008 /* CarbonAppProcess.m in Sources */,
+				FAA6DBA813C0AB04001BC008 /* FocusManager.m in Sources */,
+				FAA6DBCE13C108CA001BC008 /* LanguageDetection.m in Sources */,
+				FAA6DBCF13C108CA001BC008 /* MultiServiceHandler.m in Sources */,
+				FAA6DBD513C10908001BC008 /* PastebinLanguage.m in Sources */,
+				FAA6DBD613C10908001BC008 /* PastebinTextPoster.m in Sources */,
+				FACE7F7013C15BC400E0E9DD /* StartAtLoginController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA2A9EC213BD2715000F4741 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2A9EC313BD2715000F4741 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA2A9EC813BD2715000F4741 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2A9EC913BD2715000F4741 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FA2A9ECE13BD2715000F4741 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2A9ECF13BD2715000F4741 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA2A9ED113BD2715000F4741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA2A9ED213BD2715000F4741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA2A9ED413BD2715000F4741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pasties/Pasties-Prefix.pch";
+				INFOPLIST_FILE = "Pasties/Pasties-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA2A9ED513BD2715000F4741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pasties/Pasties-Prefix.pch";
+				INFOPLIST_FILE = "Pasties/Pasties-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA2A9EAF13BD2714000F4741 /* Build configuration list for PBXProject "Pasties" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2A9ED113BD2715000F4741 /* Debug */,
+				FA2A9ED213BD2715000F4741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2A9ED313BD2715000F4741 /* Build configuration list for PBXNativeTarget "Pasties" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2A9ED413BD2715000F4741 /* Debug */,
+				FA2A9ED513BD2715000F4741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA2A9EAC13BD2714000F4741 /* Project object */;
+}
