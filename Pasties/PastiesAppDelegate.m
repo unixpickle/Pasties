@@ -29,6 +29,20 @@
 	[pasteClipboardKeyEvent setAction:@selector(pasteClipboard:)];
 	[newPasteKeyEvent registerAction];
 	[pasteClipboardKeyEvent registerAction];
+	// setup statup items
+	SettingsController * sc = [SettingsController sharedSettings];
+	if ([sc isFirstLaunch]) {
+		NSString * bPath = [[NSBundle mainBundle] bundlePath];
+		StartAtLoginController * salc = [[StartAtLoginController alloc] initWithBundlePath:bPath];
+		if (![salc bundleExistsInLaunchItems]) {
+			int opt = (int)NSRunAlertPanel(@"Start at Login!", @"If you add this application to your login items, the system bar icon will always be visible while you are logged in.  Adding this application to your login items is highly suggested.  Would you like to do it?", @"Add to Login Items", @"No, thanks", nil);
+			if (opt == 1) {
+				[salc addBundleToLaunchItems];
+			}
+		}
+		[salc release];
+		[sc setIsFirstLaunch:NO];
+	}
 }
 
 - (void)applicationDidResignActive:(NSNotification *)notification {

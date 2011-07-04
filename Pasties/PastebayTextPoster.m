@@ -85,6 +85,7 @@
 	[request setValue:@"http://pastebay.com" forHTTPHeaderField:@"Referer"];
 	// fetch the request
 	NSString * redirect = [HTTPNoRedirect getLocationRedirectForRequest:request];
+	[request release];
 	if (!redirect) {
 		if (error) *error = [NSError errorWithCode:1 message:@"Failed to post paste" domain:@"PostTextError"];
 		return nil;

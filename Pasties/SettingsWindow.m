@@ -20,7 +20,7 @@
 
 - (id)initWithSettings:(SettingsController *)sc {
 	NSRect screenRect = [[NSScreen mainScreen] frame];
-	NSRect contentRect = NSMakeRect(screenRect.size.width / 2.0 - 200, screenRect.size.height / 2.0 - (160.0 / 3.0), 400, 160);
+	NSRect contentRect = NSMakeRect(screenRect.size.width / 2.0 - 200, screenRect.size.height / 2.0 - (160.0 / 3.0), 400, 180);
 	if ((self = [super initWithContentRect:contentRect styleMask:(NSTitledWindowMask | NSClosableWindowMask) backing:NSBackingStoreBuffered defer:NO])) {
 		[self setCollectionBehavior:([self collectionBehavior] | NSWindowCollectionBehaviorCanJoinAllSpaces)];
 		[self setLevel:CGShieldingWindowLevel()];
@@ -30,6 +30,7 @@
 		defaultLanguage = [[NSPopUpButton alloc] initWithFrame:NSMakeRect(130, contentRect.size.height - 32, 200, 22)];
 		defaultService = [[NSPopUpButton alloc] initWithFrame:NSMakeRect(130, contentRect.size.height - 64, 200, 22)];
 		autodetectLanguage = [[NSButton alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 96, 380, 22)];
+		startAtLogin = [[NSButton alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 128, 380, 22)];
 		NSTextField * languageLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 32, 120, 22)];
 		NSTextField * serviceLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 64, 120, 22)];
 		
@@ -78,9 +79,17 @@
 		[autodetectLanguage setState:[sc getAutodetectLanguage]];
 		[autodetectLanguage setFont:[NSFont systemFontOfSize:13]];
 		
+		[startAtLogin setButtonType:NSSwitchButton];
+		[startAtLogin setTitle:@"Start Pasties at login"];
+		[startAtLogin setTarget:self];
+		[startAtLogin setAction:@selector(valueChanged:)];
+		[startAtLogin setState:[[StartAtLoginController startAtLoginControllerForCurrentAppBundle] bundleExistsInLaunchItems]];
+		[startAtLogin setFont:[NSFont systemFontOfSize:13]];
+		
 		[[self contentView] addSubview:defaultLanguage];
 		[[self contentView] addSubview:defaultService];
 		[[self contentView] addSubview:autodetectLanguage];
+		[[self contentView] addSubview:startAtLogin];
 		[[self contentView] addSubview:applyButton];
 		[[self contentView] addSubview:cancelButton];
 		[[self contentView] addSubview:languageLabel];
@@ -108,6 +117,14 @@
 		[settings setDefaultLanguage:[NSString stringWithString:[defaultLanguage titleOfSelectedItem]]];
 	} else {
 		[settings setDefaultLanguage:[[settings possibleDefaultLanguages] objectAtIndex:0]];
+	}
+	StartAtLoginController * startupController = [StartAtLoginController startAtLoginControllerForCurrentAppBundle];
+	if ([startAtLogin state] != [startupController bundleExistsInLaunchItems]) {
+		if (![startAtLogin state]) {
+			[startupController removeBundleFromLaunchItems];
+		} else {
+			[startupController addBundleToLaunchItems];
+		}
 	}
 	[settings setAutodetectLanguage:[autodetectLanguage state]];
 	[applyButton setEnabled:NO];

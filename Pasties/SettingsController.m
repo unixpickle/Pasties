@@ -68,6 +68,17 @@
 	[defaults synchronize];
 }
 
+- (BOOL)isFirstLaunch {
+	NSNumber * n = [defaults objectForKey:@"HasUsed"];
+	if (!n || [n boolValue] == NO) return YES;
+	return NO;
+}
+
+- (void)setIsFirstLaunch:(BOOL)isFirst {
+	[defaults setObject:[NSNumber numberWithBool:(isFirst ^ 1)] forKey:@"HasUsed"];
+	[defaults synchronize];
+}
+
 #pragma mark Utils
 
 - (NSArray *)possibleDefaultLanguages {

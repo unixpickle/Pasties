@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "SettingsController.h"
 #import "FocusManager.h"
+#import "StartAtLoginController.h"
 
 @interface SettingsWindow : NSWindow {
     NSPopUpButton * defaultLanguage;
 	NSPopUpButton * defaultService;
 	NSButton * autodetectLanguage;
+	NSButton * startAtLogin;
 	NSButton * applyButton;
 	NSButton * cancelButton;
 	SettingsController * settings;

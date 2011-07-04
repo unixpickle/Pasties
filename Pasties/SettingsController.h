@@ -22,6 +22,8 @@
 - (void)setDefaultService:(NSString *)service;
 - (BOOL)getAutodetectLanguage;
 - (void)setAutodetectLanguage:(BOOL)autodetect;
+- (BOOL)isFirstLaunch;
+- (void)setIsFirstLaunch:(BOOL)isFirst;
 
 - (NSArray *)possibleDefaultLanguages;
 - (NSArray *)possibleServices;

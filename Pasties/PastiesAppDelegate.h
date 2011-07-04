@@ -13,6 +13,7 @@
 #import "ANKeyEvent.h"
 #import "FocusManager.h"
 #import "LanguageDetection.h"
+#import "StartAtLoginController.h"
 
 @interface PastiesAppDelegate : NSObject <NSApplicationDelegate> {
 	NSStatusItem * systemMenu;
