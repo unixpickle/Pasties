@@ -83,7 +83,7 @@
 		[startAtLogin setTitle:@"Start Pasties at login"];
 		[startAtLogin setTarget:self];
 		[startAtLogin setAction:@selector(valueChanged:)];
-		[startAtLogin setState:[[StartAtLoginController startAtLoginControllerForCurrentAppBundle] bundleExistsInLaunchItems]];
+		[startAtLogin setState:[[StartAtLoginController controllerForCurrentAppBundle] bundleExistsInLaunchItems]];
 		[startAtLogin setFont:[NSFont systemFontOfSize:13]];
 		
 		[[self contentView] addSubview:defaultLanguage];
@@ -118,7 +118,7 @@
 	} else {
 		[settings setDefaultLanguage:[[settings possibleDefaultLanguages] objectAtIndex:0]];
 	}
-	StartAtLoginController * startupController = [StartAtLoginController startAtLoginControllerForCurrentAppBundle];
+	StartAtLoginController * startupController = [StartAtLoginController controllerForCurrentAppBundle];
 	if ([startAtLogin state] != [startupController bundleExistsInLaunchItems]) {
 		if (![startAtLogin state]) {
 			[startupController removeBundleFromLaunchItems];

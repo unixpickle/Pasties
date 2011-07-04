@@ -14,7 +14,7 @@
 }
 
 - (id)initWithBundlePath:(NSString *)appBundle;
-+ (StartAtLoginController *)startAtLoginControllerForCurrentAppBundle;
++ (StartAtLoginController *)controllerForCurrentAppBundle;
 - (BOOL)bundleExistsInLaunchItems;
 - (void)addBundleToLaunchItems;
 - (void)removeBundleFromLaunchItems;

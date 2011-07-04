@@ -25,7 +25,7 @@
 	return self;
 }
 
-+ (StartAtLoginController *)startAtLoginControllerForCurrentAppBundle {
++ (StartAtLoginController *)controllerForCurrentAppBundle {
 	return [[[StartAtLoginController alloc] initWithBundlePath:[[NSBundle mainBundle] bundlePath]] autorelease];
 }
 
