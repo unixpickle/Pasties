@@ -35,6 +35,7 @@
 		NSString * bPath = [[NSBundle mainBundle] bundlePath];
 		StartAtLoginController * salc = [[StartAtLoginController alloc] initWithBundlePath:bPath];
 		if (![salc bundleExistsInLaunchItems]) {
+			[[FocusManager sharedFocusManager] forceAppFocus];
 			int opt = (int)NSRunAlertPanel(@"Start at Login!", @"If you add this application to your login items, the system bar icon will always be visible while you are logged in.  Adding this application to your login items is highly suggested.  Would you like to do it?", @"Add to Login Items", @"No, thanks", nil);
 			if (opt == 1) {
 				[salc addBundleToLaunchItems];
