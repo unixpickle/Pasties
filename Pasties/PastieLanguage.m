@@ -13,27 +13,27 @@ static struct {
 	NSString * languageStr;
 	PastieLanguageType languageType;
 } _PastieLanguagePair[] = {
-	{@"Objective-C/C++", PastieLanguageObjectiveC},
 	{@"Action Script", PastieLanguageActionScript},
-	{@"Ruby", PastieLanguageRuby},
-	{@"Ruby on Rails", PastieLanguageRubyOnRails},
-	{@"Diff", PastieLanguageDiff},
-	{@"Plain Text", PastieLanguagePlainText},
+	{@"Bash", PastieLanguageBash},
+	{@"C#", PastieLanguageCSharp},
 	{@"C/C++", PastieLanguageCCPP},
 	{@"CSS", PastieLanguageCSS},
+	{@"Diff", PastieLanguageDiff},
+	{@"Go", PastieLanguageGo},
+	{@"HTML (ERB or Rails)", PastieLanguageHTMLERBorRails},
+	{@"HTML (XML)", PastieLanguageHTMLXML},
 	{@"Java", PastieLanguageJava},
 	{@"Javascript", PastieLanguageJavascript},
-	{@"HTML (XML)", PastieLanguageHTMLXML},
-	{@"HTML (ERB or Rails)", PastieLanguageHTMLERBorRails},
-	{@"Bash", PastieLanguageBash},
-	{@"SQL", PastieLanguageSQL},
-	{@"PHP", PastieLanguagePHP},
-	{@"Python", PastieLanguagePython},
+	{@"Objective-C/C++", PastieLanguageObjectiveC},
 	{@"Pascal", PastieLanguagePascal},
 	{@"Perl", PastieLanguagePerl},
-	{@"YAML", PastieLanguageYAML},
-	{@"C#", PastieLanguageCSharp},
-	{@"Go", PastieLanguageGo}
+	{@"PHP", PastieLanguagePHP},
+	{@"Plain Text", PastieLanguagePlainText},
+	{@"Python", PastieLanguagePython},
+	{@"Ruby", PastieLanguageRuby},
+	{@"Ruby on Rails", PastieLanguageRubyOnRails},
+	{@"SQL", PastieLanguageSQL},
+	{@"YAML", PastieLanguageYAML}
 };
 #define _PastieLanguagePair_Count 21
 
