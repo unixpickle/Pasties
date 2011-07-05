@@ -12,8 +12,7 @@ static struct {
 	NSString * languageName;
 	PastebinLanguageType languageType;
 } _PastebinLanguageNames[] = {
-	{@"Plain Text", PastebinLanguagePlainText},
-	{@"ActionScript", PastebinLanguageActionScript},
+		{@"ActionScript", PastebinLanguageActionScript},
 	{@"ActionScript 3", PastebinLanguageActionScript3},
 	{@"AppleScript", PastebinLanguageAppleScript},
 	{@"ASM (NASM based)", PastebinLanguageNASM},
@@ -21,8 +20,8 @@ static struct {
 	{@"Bash", PastebinLanguageBash},
 	{@"C", PastebinLanguageC},
 	{@"C#", PastebinLanguageCSharp},
-	{@"C++", PastebinLanguageCPP},
 	{@"COBOL", PastebinLanguageCOBOL},
+	{@"C++", PastebinLanguageCPP},
 	{@"CSS", PastebinLanguageCSS},
 	{@"D", PastebinLanguageD},
 	{@"Diff", PastebinLanguageDiff},
@@ -35,6 +34,7 @@ static struct {
 	{@"Objective-C", PastebinLanguageObjectiveC},
 	{@"Perl", PastebinLanguagePerl},
 	{@"PHP", PastebinLanguagePHP},
+	{@"Plain Text", PastebinLanguagePlainText},
 	{@"Python", PastebinLanguagePython},
 	{@"Rails", PastebinLanguageRails}
 };

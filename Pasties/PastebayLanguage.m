@@ -12,16 +12,15 @@ static struct {
 	NSString * name;
 	NSString * abbrev;
 } _PastebayLanguagesList[] = {
-	{@"Plain Text", @"text"},
 	{@"ActionScript", @"actionscript"},
 	{@"Ada", @"ada"},
 	{@"AppleScript", @"applescript"},
 	{@"ASM (NASM based)", @"asm"},
 	{@"Bash", @"bash"},
-	{@"C#", @"csharp"},
 	{@"C", @"c"},
-	{@"CSS", @"css"},
+	{@"C#", @"csharp"},
 	{@"C++", @"cpp"},
+	{@"CSS", @"css"},
 	{@"HTML", @"html4strict"},
 	{@"Java", @"java"},
 	{@"Javascript", @"javascript"},
@@ -31,11 +30,12 @@ static struct {
 	{@"Objective-C", @"objc"},
 	{@"Perl", @"perl"},
 	{@"PHP", @"php"},
+	{@"Plain Text", @"text"},
 	{@"Python", @"python"},
 	{@"Ruby", @"ruby"},
-	{@"Visual Basic", @"vb"},
 	{@"VB.NET", @"vbnet"},
-	{@"XML", @"xml"}, /* 24 */
+	{@"Visual Basic", @"vb"},
+	{@"XML", @"xml"}
 };
 
 #define _PastebayLanguagesList_Count 24
