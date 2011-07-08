@@ -89,6 +89,10 @@
 		[window makeKeyAndOrderFront:self];
 		[window startPosting];
 		[window release];
+	} else {
+		[[FocusManager sharedFocusManager] forceAppFocus];
+		NSRunAlertPanel(@"Invalid format", @"You cannot paste your clipboard because it does not contain plain text.", @"OK", nil, nil);
+		[[FocusManager sharedFocusManager] resignAppFocus];
 	}
 }
 

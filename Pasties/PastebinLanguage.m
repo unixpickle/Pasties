@@ -12,11 +12,7 @@ static struct {
 	NSString * languageName;
 	PastebinLanguageType languageType;
 } _PastebinLanguageNames[] = {
-<<<<<<< HEAD
-		{@"ActionScript", PastebinLanguageActionScript},
-=======
 	{@"ActionScript", PastebinLanguageActionScript},
->>>>>>> 1ccb1c1c7a96dbbd912344e622bcde27e6f00406
 	{@"ActionScript 3", PastebinLanguageActionScript3},
 	{@"AppleScript", PastebinLanguageAppleScript},
 	{@"ASM (NASM based)", PastebinLanguageNASM},

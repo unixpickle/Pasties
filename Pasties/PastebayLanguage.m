@@ -35,11 +35,7 @@ static struct {
 	{@"Ruby", @"ruby"},
 	{@"VB.NET", @"vbnet"},
 	{@"Visual Basic", @"vb"},
-<<<<<<< HEAD
-	{@"XML", @"xml"}
-=======
 	{@"XML", @"xml"} /* 24 */
->>>>>>> 1ccb1c1c7a96dbbd912344e622bcde27e6f00406
 };
 
 #define _PastebayLanguagesList_Count 24
