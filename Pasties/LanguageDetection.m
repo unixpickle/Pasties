@@ -15,6 +15,7 @@
 - (int)scoreObjC;
 - (int)scorePHP;
 - (int)scorePerl;
+- (int)scoreJS;
 
 @end
 
@@ -71,6 +72,7 @@
 	score += [self numberOfOccurrencesCaseInsensitive:@"double"];
 	return score;
 }
+
 - (int)scoreCPP {
 	int score = [self scoreC];
 	score += [self numberOfOccurrencesCaseInsensitive:@"<string>"];
@@ -83,6 +85,7 @@
 	score += [self numberOfOccurrencesCaseInsensitive:@"using namespace"] * 10;
 	return score;
 }
+
 - (int)scoreObjC {
 	int score = [self scoreC];
 	score += [self numberOfOccurrences:@"NSObject"] * 5;
@@ -102,6 +105,7 @@
 	score += (int)round((double)[self numberOfOccurrences:@"NS"] / 2.0);
 	return score;
 }
+
 - (int)scorePHP {
 	int score = [self numberOfOccurrences:@"echo"];
 	score += [self numberOfOccurrences:@"$"];
@@ -112,6 +116,7 @@
 	score += [self numberOfOccurrences:@"die"];
 	return score;
 }
+
 - (int)scorePerl {
 	int score = [self numberOfOccurrences:@"print"];
 	score += [self numberOfOccurrences:@"$"] * 3;
@@ -127,12 +132,25 @@
 	return score;
 }
 
+- (int)scoreJS {
+	int score = [self numberOfOccurrences:@"var"]*2;
+	score += [self numberOfOccurrences:@"function"];
+	score += [self numberOfOccurrences:@"new"];
+	score += [self numberOfOccurrences:@"console.log"] * 2;
+	score += [self numberOfOccurrences:@"document.getElementById"] * 3;
+	score += [self numberOfOccurrences:@"$("];
+	score += [self numberOfOccurrencesCaseInsensitive:@"XMLHttpRequest"] * 4;
+	score += [self numberOfOccurrences:@".css({"] * 3;
+	return score;
+}
+
 - (NSString *)languageGuess {
 	int scoreC = [self scoreC];
 	int scoreCPP = [self scoreCPP];
 	int scoreObjC = [self scoreObjC];
 	int scorePerl = [self scorePerl];
 	int scorePHP = [self scorePHP];
+	int scoreJS = [self scoreJS];
 	// find the greatest score
 	NSString * greatestName = @"C";
 	int greatestScore = scoreC;
@@ -140,6 +158,7 @@
 	if (scoreObjC > scoreCPP) { greatestName = @"Objective-C"; greatestScore = scoreObjC; }
 	if (scorePerl > scoreObjC) { greatestName = @"Perl"; greatestScore = scorePerl; }
 	if (scorePHP > scorePerl) { greatestName = @"PHP"; greatestScore = scorePHP; }
+	if (scoreJS > scorePHP) { greatestName = @"Javascript"; greatestScore = scoreJS; }
 	if (greatestScore < 5) return nil;
 	return greatestName;
 }

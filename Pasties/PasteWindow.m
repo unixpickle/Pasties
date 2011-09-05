@@ -70,6 +70,13 @@
 }
 
 - (id)initWithText:(NSString *)text language:(NSString *)language service:(NSString *)service {
+	if ((self = [self initWithText:text language:language service:service makePrivate:NO])) {
+		
+	}
+	return self;
+}
+
+- (id)initWithText:(NSString *)text language:(NSString *)language service:(NSString *)service makePrivate:(BOOL)isPrivate {
 	NSRect mainScreenFrame = [[NSScreen mainScreen] frame];
 	origY = [[self class] popHighestY];
 	NSRect contentFrame = NSMakeRect(mainScreenFrame.size.width - 260, mainScreenFrame.size.height - origY, 250, 65);
@@ -83,12 +90,14 @@
 			return nil;
 		}
 		
+		[poster setIsPrivate:isPrivate];
+		
 		activityLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(10, contentFrame.size.height - 30, contentFrame.size.width - 20, 20)];
 		loadingBar = [[NSProgressIndicator alloc] initWithFrame:NSMakeRect(10, contentFrame.size.height - 55, contentFrame.size.width - 20, 20)];
-		cancelButton = [[NSButton alloc] initWithFrame:NSMakeRect(contentFrame.size.width - 90, contentFrame.size.height - 55, 80, 24)];
-		viewButton = [[NSButton alloc] initWithFrame:NSMakeRect(10, contentFrame.size.height - 55, contentFrame.size.width - 110, 24)];
-		[cancelButton setBezelStyle:NSTexturedRoundedBezelStyle];
-		[viewButton setBezelStyle:NSTexturedRoundedBezelStyle];
+		cancelButton = [[NSButton alloc] initWithFrame:NSMakeRect(contentFrame.size.width - 95, contentFrame.size.height - 55, 90, 24)];
+		viewButton = [[NSButton alloc] initWithFrame:NSMakeRect(5, contentFrame.size.height - 55, contentFrame.size.width - 100, 24)];
+		[cancelButton setBezelStyle:NSRoundedBezelStyle];
+		[viewButton setBezelStyle:NSRoundedBezelStyle];
 		[activityLabel setBackgroundColor:[NSColor clearColor]];
 		[activityLabel setSelectable:NO];
 		[activityLabel setBordered:NO];

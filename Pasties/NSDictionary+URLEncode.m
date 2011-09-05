@@ -10,6 +10,7 @@
 
 static NSString * _privateEncodeStringForURL (NSString * orig) {
 	NSMutableString * str = [NSMutableString stringWithString:[orig stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[str replaceOccurrencesOfString:@"+" withString:@"%2B" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [str length])];
 	[str replaceOccurrencesOfString:@"&" withString:@"%26" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [str length])];
 	[str replaceOccurrencesOfString:@"=" withString:@"%3D" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [str length])];
 	[str replaceOccurrencesOfString:@"?" withString:@"%3F" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [str length])];

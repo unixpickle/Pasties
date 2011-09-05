@@ -20,7 +20,7 @@
 
 - (id)initWithSettings:(SettingsController *)sc {
 	NSRect screenRect = [[NSScreen mainScreen] frame];
-	NSRect contentRect = NSMakeRect(screenRect.size.width / 2.0 - 200, screenRect.size.height / 2.0 - (160.0 / 3.0), 400, 180);
+	NSRect contentRect = NSMakeRect(screenRect.size.width / 2.0 - 200, screenRect.size.height / 2.0 - (160.0 / 3.0), 400, 221);
 	if ((self = [super initWithContentRect:contentRect styleMask:(NSTitledWindowMask | NSClosableWindowMask) backing:NSBackingStoreBuffered defer:NO])) {
 		[self setCollectionBehavior:([self collectionBehavior] | NSWindowCollectionBehaviorCanJoinAllSpaces)];
 		[self setLevel:CGShieldingWindowLevel()];
@@ -29,8 +29,9 @@
 		cancelButton = [[NSButton alloc] initWithFrame:NSMakeRect(contentRect.size.width - 200, 10, 100, 24)];
 		defaultLanguage = [[NSPopUpButton alloc] initWithFrame:NSMakeRect(130, contentRect.size.height - 32, 200, 22)];
 		defaultService = [[NSPopUpButton alloc] initWithFrame:NSMakeRect(130, contentRect.size.height - 64, 200, 22)];
-		autodetectLanguage = [[NSButton alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 96, 380, 22)];
-		startAtLogin = [[NSButton alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 128, 380, 22)];
+		autodetectLanguage = [[NSButton alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 106, 380, 22)];
+		startAtLogin = [[NSButton alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 133, 380, 22)];
+		privatePost = [[NSButton alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 160, 380, 22)];
 		NSTextField * languageLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 32, 120, 22)];
 		NSTextField * serviceLabel = [[NSTextField alloc] initWithFrame:NSMakeRect(10, contentRect.size.height - 64, 120, 22)];
 		
@@ -79,6 +80,13 @@
 		[autodetectLanguage setState:[sc getAutodetectLanguage]];
 		[autodetectLanguage setFont:[NSFont systemFontOfSize:13]];
 		
+		[privatePost setButtonType:NSSwitchButton];
+		[privatePost setTitle:@"Make pastes private if applicable"];
+		[privatePost setTarget:self];
+		[privatePost setAction:@selector(valueChanged:)];
+		[privatePost setState:[sc getMakePrivate]];
+		[privatePost setFont:[NSFont systemFontOfSize:13]];
+		
 		[startAtLogin setButtonType:NSSwitchButton];
 		[startAtLogin setTitle:@"Start Pasties at login"];
 		[startAtLogin setTarget:self];
@@ -90,6 +98,7 @@
 		[[self contentView] addSubview:defaultService];
 		[[self contentView] addSubview:autodetectLanguage];
 		[[self contentView] addSubview:startAtLogin];
+		[[self contentView] addSubview:privatePost];
 		[[self contentView] addSubview:applyButton];
 		[[self contentView] addSubview:cancelButton];
 		[[self contentView] addSubview:languageLabel];
@@ -127,6 +136,7 @@
 		}
 	}
 	[settings setAutodetectLanguage:[autodetectLanguage state]];
+	[settings setMakePrivate:[privatePost state]];
 	[applyButton setEnabled:NO];
 }
 - (void)cancel:(id)sender {

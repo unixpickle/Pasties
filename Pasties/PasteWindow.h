@@ -30,6 +30,7 @@
 @property (nonatomic, retain) NSURL * launchURL;
 
 - (id)initWithText:(NSString *)text language:(NSString *)language service:(NSString *)service;
+- (id)initWithText:(NSString *)text language:(NSString *)language service:(NSString *)service makePrivate:(BOOL)isPrivate;
 - (void)startPosting;
 - (void)close:(id)sender;
 - (void)view:(id)sender;

@@ -85,14 +85,14 @@ static NSString * _privateDataToString (NSData * data) {
 		[pool drain];
 		return;
 	}
-	
+	NSString * isPrivatePost = ([self isPrivate] ? @"1" : @"0");
 	// next, we will generate the post fields for pastie.org
 	NSDictionary * postKeys = [NSDictionary dictionaryWithObjectsAndKeys:pasteString, @"paste[body]", 
 							   [NSString stringWithFormat:@"%d", [theLanguage languageType]], @"paste[parser_id]", 
 							   @"", @"lang",
 							   authorization, @"paste[authorization]",
 							   @"", @"key",
-							   @"0", @"paste[restricted]", 
+							   isPrivatePost, @"paste[restricted]", 
 							   @"31", @"x",
 							   @"8", @"y", nil];
 	NSString * encoded = [postKeys encodeForURLPost];

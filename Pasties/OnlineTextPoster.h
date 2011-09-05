@@ -24,6 +24,7 @@
  */
 @interface OnlineTextPoster : NSObject {
 	id<OnlineTextPosterDelegate> delegate;
+	BOOL isPrivate;
 }
 
 /**
@@ -34,6 +35,12 @@
  * it will still be called upon when a post finishes.
  */
 @property (nonatomic, retain) id<OnlineTextPosterDelegate> delegate;
+
+/**
+ * Some services support "Private" pastes.  If a service does, it should use this
+ * value to determine whether or not to make the paste private.
+ */
+@property (readwrite) BOOL isPrivate;
 
 /**
  * Creates a new text poster with text and a language.

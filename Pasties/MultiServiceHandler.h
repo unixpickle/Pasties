@@ -19,5 +19,6 @@
 + (NSArray *)possibleLanguagesForService:(NSString *)service;
 + (OnlineTextPoster *)textPosterWithText:(NSString *)text language:(NSString *)languageName service:(NSString *)serviceName;
 + (NSString *)convertLanguage:(NSString *)lang toService:(NSString *)service;
++ (BOOL)serviceHasPrivatePosts:(NSString *)service;
 
 @end

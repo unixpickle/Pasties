@@ -16,6 +16,7 @@
 	NSPopUpButton * defaultService;
 	NSButton * autodetectLanguage;
 	NSButton * startAtLogin;
+	NSButton * privatePost;
 	NSButton * applyButton;
 	NSButton * cancelButton;
 	SettingsController * settings;

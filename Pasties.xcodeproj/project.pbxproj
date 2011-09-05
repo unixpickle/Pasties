@@ -340,8 +340,8 @@
 			children = (
 				FAA6DBD113C10908001BC008 /* PastebinLanguage.h */,
 				FAA6DBD213C10908001BC008 /* PastebinLanguage.m */,
-				FAA6DBD313C10908001BC008 /* PastebinTextPoster.m */,
 				FAA6DBD413C10908001BC008 /* PastebinTextPoster.h */,
+				FAA6DBD313C10908001BC008 /* PastebinTextPoster.m */,
 			);
 			name = Pastebin;
 			sourceTree = "<group>";

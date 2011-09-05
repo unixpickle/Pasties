@@ -12,6 +12,7 @@
 @implementation OnlineTextPoster
 
 @synthesize delegate;
+@synthesize isPrivate;
 
 - (id)init {
     if ((self = [super init])) {

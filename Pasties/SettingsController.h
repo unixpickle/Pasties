@@ -24,6 +24,8 @@
 - (void)setAutodetectLanguage:(BOOL)autodetect;
 - (BOOL)isFirstLaunch;
 - (void)setIsFirstLaunch:(BOOL)isFirst;
+- (void)setMakePrivate:(BOOL)isPrivate;
+- (BOOL)getMakePrivate;
 
 - (NSArray *)possibleDefaultLanguages;
 - (NSArray *)possibleServices;

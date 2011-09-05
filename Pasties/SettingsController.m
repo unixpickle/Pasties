@@ -79,6 +79,20 @@
 	[defaults synchronize];
 }
 
+- (void)setMakePrivate:(BOOL)isPrivate {
+	[defaults setObject:[NSNumber numberWithBool:isPrivate] forKey:@"IsPrivate"];
+	[defaults synchronize];
+}
+
+- (BOOL)getMakePrivate {
+	NSNumber * n = [defaults objectForKey:@"IsPrivate"];
+	if (!n) {
+		[self setMakePrivate:NO];
+		return NO;
+	}
+	return [n boolValue];
+}
+
 #pragma mark Utils
 
 - (NSArray *)possibleDefaultLanguages {

@@ -79,7 +79,8 @@
 			}
 			language = [MultiServiceHandler convertLanguage:guess toService:service];
 		}
-		PasteWindow * window = [[PasteWindow alloc] initWithText:str language:language service:service];
+		BOOL private = [[SettingsController sharedSettings] getMakePrivate];
+		PasteWindow * window = [[PasteWindow alloc] initWithText:str language:language service:service makePrivate:private];
 		if (!window) {
 			if (![language isEqualToString:[[SettingsController sharedSettings] getDefaultLanguage]]) {
 				window = [[PasteWindow alloc] initWithText:str language:[[SettingsController sharedSettings] getDefaultLanguage] service:service];

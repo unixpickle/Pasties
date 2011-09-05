@@ -49,12 +49,13 @@
 	NSString * theText = [userInfo objectForKey:@"text"];
 	PastebinLanguage * theLanguage = [userInfo objectForKey:@"language"];
 	// post info.
+	NSString * privateStr = ([self isPrivate] ? @"1" : @"0");
 	NSString * name = [NSString stringWithFormat:@"Pasties %@", [NSDate date]];
 	NSDictionary * postParams = [NSDictionary dictionaryWithObjectsAndKeys:@"submit_hidden", @"submit_hidden",
 								 theText, @"paste_code",
 								 [NSString stringWithFormat:@"%d", [theLanguage languageType]], @"paste_format",
 								 @"N", @"paste_expire_date", 
-								 @"0", @"paste_private", 
+								 privateStr, @"paste_private", 
 								 name, @"paste_name", nil];
 	NSError * e = nil;
 	NSURL * postURL = [self postDictionray:postParams error:&e];

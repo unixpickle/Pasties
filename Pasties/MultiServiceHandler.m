@@ -58,6 +58,9 @@
 	}
 	return lang;
 }
++ (BOOL)serviceHasPrivatePosts:(NSString *)service {
+	return ([service isEqualToString:@"Pastie"] | [service isEqualToString:@"Pastebin"]);
+}
 
 - (void)dealloc {
     [super dealloc];

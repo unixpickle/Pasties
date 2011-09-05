@@ -19,6 +19,7 @@
 	NSScrollView * textScroll;
 	NSPopUpButton * language;
 	NSPopUpButton * service;
+	NSButton * makePrivate;
 	NSButton * submitButton;
 	ANCloseButton * closeButton;
 }
